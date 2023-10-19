@@ -1,0 +1,11 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+  "command-runner.commands": {
+    "pub get": "flutter pub get",
+    "build_runner": "flutter pub run build_runner build",
+    "build_runner watch": "flutter pub run build_runner watch"
+  }
+}
