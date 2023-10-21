@@ -101,6 +101,7 @@ class LoginForm extends StatelessWidget {
                   return PasswordFormField(
                     autovalidateMode: AutovalidateMode.always,
                     onSaved: context.read<LoginCubit>().onSavePassword,
+                    onFieldSubmitted: (_) => _submitForm(context),
                     validator: (value) => (value ?? '').isValidPassword()
                         ? null
                         : 'Invalid Password it should be at least 6 characters',

@@ -20,7 +20,7 @@ class SplashCubit extends Cubit<SplashState> {
           emit(SplashState.loggedIn);
           _authRepository.isCountrySelected.then((isCountrySelected) {
             if (isCountrySelected) {
-              context.goNamed(Routes.mainMenu.name);
+              context.goNamed(Routes.competitions.name);
             } else {
               context.goNamed(Routes.countries.name);
             }
