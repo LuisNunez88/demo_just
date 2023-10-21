@@ -62,8 +62,8 @@ class CompetitionTile extends StatelessWidget {
                       borderRadius:
                           const BorderRadius.only(topLeft: Radius.circular(10)),
                       child: Container(
-                        height: 40,
-                        width: 50,
+                        height: context.wp(5),
+                        width: context.wp(7),
                         decoration: BoxDecoration(
                           borderRadius: const BorderRadius.only(
                               topLeft: Radius.circular(10)),
@@ -97,7 +97,7 @@ class CompetitionTile extends StatelessWidget {
               ),
             ),
             SizedBox(
-              width: context.wp(5),
+              width: context.wp(2),
             ),
             Expanded(
               flex: 6,

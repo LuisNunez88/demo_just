@@ -53,15 +53,19 @@ class CountryTile extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: context.hp(2),
+                height: context.hp(1),
               ),
               Text(
                 country.name,
-                style: const TextStyle(
-                    color: Colors.black, fontWeight: FontWeight.w600),
+                maxLines: 1,
+                style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w600,
+                  fontSize: context.sp(8),
+                ),
               ),
               SizedBox(
-                height: context.hp(2),
+                height: context.hp(1),
               ),
             ],
           ),
